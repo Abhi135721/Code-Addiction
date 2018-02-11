@@ -6,13 +6,13 @@ public class Solution {
         if(A.length==1)return 0;
         else{
             for(int i=1;i<A.length;i++){
-               min=min+getm(A[i],B[i]);
+               min=min+getmax(A[i],B[i]);
                c=A[i];d=B[i];
             }
         }
         return min;
     }
-    public static int getm(int a,int b){
+    public static int getmax(int a,int b){
         int z=0,x=0,y=0;
         x=Math.abs(c-a);
         y=Math.abs(d-b);
