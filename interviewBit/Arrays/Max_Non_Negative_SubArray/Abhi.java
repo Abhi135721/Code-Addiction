@@ -6,7 +6,17 @@
 		So keep adding from first positive till getting negative number , store the sum
 		repeat this cycle and compare sums and if sums are equal compare lengths and if lengths are also equal compare which one's start index is lesser
 */
+import java.util.Scanner;
 public class Abhi{
+	public static void main(String [] args){
+		Scanner sc = new Scanner(System.in);
+		int size = sc.nextInt();
+		int [] A = new int[n];
+		for(int i = 0 ; i < n ; i++){
+			A[i] = sc.nextInt();
+		}
+		maxSet(A);
+	}
     public int[] maxset(int[] A) {
         int start = 0 , end = 0;
         long max_sum = 0 , sum = 0;
