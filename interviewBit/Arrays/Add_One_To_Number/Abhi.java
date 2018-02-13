@@ -5,6 +5,7 @@
 		So , updated it with 0 and added 1 to preceding digit
 		for cases like 9999 we have to increase array size by 1 to store 10000
 */
+import java.util.Scanner;
 public class Abhi{
     public static void main(String [] args){
 		Scanner sc = new Scanner(System.in);
