@@ -5,6 +5,8 @@
 		If everything is negative in the given array return the maximum negative number possible
 		Else check for the maximum positive sum possible
 */
+import java.util.Scanner;
+
 public class Solution {
     // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY
 	public static void main(String [] args){
