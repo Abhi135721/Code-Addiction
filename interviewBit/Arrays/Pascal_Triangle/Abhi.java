@@ -5,6 +5,7 @@
 		The ith element of nth row is sum of (n-1)th row's ith element and (i-1)th element
 */
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Abhi{
 	public static void main(String [] args){
