@@ -8,7 +8,7 @@ For example:
 Input: 27
 output: AA
 */
-public class Excel_Column_Title_dsp {
+public class Dsp {
     
 public String convertToTitle(int A) {
 
