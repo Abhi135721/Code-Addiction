@@ -4,7 +4,15 @@
 	Approach :
 		The ith element of nth row is sum of (n-1)th row's ith element and (i-1)th element
 */
-public class Solution {
+import java.util.Scanner;
+
+public class Abhi{
+	public static void main(String [] args){
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		ArrayList<ArrayList<Integer>> arr = new ArrayList<ArrayList<Integer>>();
+		arr = generate(n);
+	}
     public ArrayList<ArrayList<Integer>> generate(int A) {
         ArrayList<ArrayList<Integer>> arr = new ArrayList<ArrayList<Integer>>();
         for (int l = 0; l < A; l++){
