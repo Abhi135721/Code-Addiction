@@ -5,8 +5,8 @@ Inside `git bash` or your linux shell, run
 bash setup-hooks.sh
 ```
 
-This has to be done only **once**. Usually, at the time of cloning the
-project.
+This has to be done only **once**. (Unless you do this, your files will not
+be formatted on git commits)
 
 On every subsequent commit, your files will get formatted according to the
 google java formatting guide.
