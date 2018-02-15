@@ -9,35 +9,28 @@ Input: 27
 output: AA
 */
 public class Dsp {
-    
-public String convertToTitle(int A) {
 
-        String X = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  public String convertToTitle(int A) {
 
-        String st="";
+    String X = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        while(A>0){
+    String st = "";
 
-            st= st + X.charAt((A-1) % 26);
+    while (A > 0) {
 
-            if(A%26==0)
+      st = st + X.charAt((A - 1) % 26);
 
-            A=(A-1)/26;
-
-            else
-
-            A/=26;
-
-        }
-
-      String str=String.valueOf(new StringBuffer(st).reverse());
-
-        return str;
-
+      if (A % 26 == 0) A = (A - 1) / 26;
+      else A /= 26;
     }
-public static void main(String args[]){
-String excel=titleToNumber(27);
-System.out.println(excel);
-}
 
+    String str = String.valueOf(new StringBuffer(st).reverse());
+
+    return str;
+  }
+
+  public static void main(String args[]) {
+    String excel = titleToNumber(27);
+    System.out.println(excel);
+  }
 }

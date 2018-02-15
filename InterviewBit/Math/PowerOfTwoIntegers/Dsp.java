@@ -8,17 +8,15 @@ For B = 3, number of possibilities = INT_MAX**1/3 < 2^11
 decrease the integer max value depend upon the base number
 */
 public class Solution {
-    public int isPower(int x) {
-       if (x <= 1)
-       return 1;
-            for (int base=2; base<x && base<Integer.MAX_VALUE/base; base++) {
-                int temp = base; 
-                while (temp<=x && temp<Integer.MAX_VALUE/base) {
-                    temp*=base;
-                    if (temp==x) 
-                    return 1;
-                }
-            }
-            return 0;
-}
+  public int isPower(int x) {
+    if (x <= 1) return 1;
+    for (int base = 2; base < x && base < Integer.MAX_VALUE / base; base++) {
+      int temp = base;
+      while (temp <= x && temp < Integer.MAX_VALUE / base) {
+        temp *= base;
+        if (temp == x) return 1;
+      }
+    }
+    return 0;
+  }
 }

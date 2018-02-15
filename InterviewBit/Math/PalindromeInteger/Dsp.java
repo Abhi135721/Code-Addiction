@@ -7,13 +7,11 @@ input: 121
 output: True
 */
 public class Dsp {
-    public int isPalindrome(int A) {
-        String st=String.valueOf(A);
-        for(int i=0;i<=st.length()/2;i++){
-            if(st.charAt(i)!=st.charAt(st.length()-1-i))
-            return 0;
-        }
-        return 1;
-        
+  public int isPalindrome(int A) {
+    String st = String.valueOf(A);
+    for (int i = 0; i <= st.length() / 2; i++) {
+      if (st.charAt(i) != st.charAt(st.length() - 1 - i)) return 0;
     }
+    return 1;
+  }
 }
