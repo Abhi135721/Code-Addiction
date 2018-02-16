@@ -1,17 +1,19 @@
 /*
-Question: Add 1 to the number
+Question:	Add 1 to the number
 
-Approach: Remove all paded zeros ,add 1 to the end of the array list
-          and store result in another array list until carry is not generated
-          and then at the end reverse the new arraylist and return that
-		  Example: Input Given list is {1,2,3,9,9}
-				   Output :
-				   1,2,3,9,(9+1)-->carry is 1 & answer list is {0}
-				   1,2,3,(9+1)-->carry is 1 & answer list is {0,0}
-				   1,2,(3+1)-->carry is 0 & answer list is {0,0,4}
-				   1,(2+0)-->carry is 0 & answer list is {0,0,4,2}
-				   (1+0)-->carry is 1 & answer list is {0,0,4,2,1}
-				   Now reverse the list and send output as {1,2,4,0,0}
+Approach:	Remove all paded zeros at the begining of list
+			the add 1 to end of the list iterate and add carry to all elements in list
+			now reverse the answer list
+			
+			For Example: 
+			Input:	Given list is {0,0,0,1,2,3,9,9}
+			Output:	Modified Input{1,2,3,9,9}
+					1,2,3,9,(9+1)-->carry is 1 & answer list is {0}
+					1,2,3,(9+1)-->carry is 1 & answer list is {0,0}
+					1,2,(3+1)-->carry is 0 & answer list is {0,0,4}
+					1,(2+0)-->carry is 0 & answer list is {0,0,4,2}
+					(1+0)-->carry is 1 & answer list is {0,0,4,2,1}
+					Now reverse the list and send output as {1,2,4,0,0}
 
 Edge cases: paded zeroes at the front,
             input contains all 9's
