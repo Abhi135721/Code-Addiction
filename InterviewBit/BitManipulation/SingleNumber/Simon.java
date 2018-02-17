@@ -7,9 +7,9 @@ Approach:	Perform xor operation to every bit and return the result
 			A^A^B^B^C-->0^0^C-->C (since A^A=0)
 */
 public class Solution {
-    public int singleNumber(final int[] A) {
-        int sum=0;
-        for(int i=0;i<A.length;i++)sum=sum^A[i];
-        return sum;
-    }
+  public int singleNumber(final int[] A) {
+    int sum = 0;
+    for (int i = 0; i < A.length; i++) sum = sum ^ A[i];
+    return sum;
+  }
 }
