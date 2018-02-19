@@ -7,6 +7,8 @@
 					 if number is divisible by 5 replace it with Buzz
 					 if number is divisible by 3 & 5 replace it with FizzBuzz
 */
+import java.util.Scanner;
+
 public class Abhi{
 	public static void main(String [] args){
 		
