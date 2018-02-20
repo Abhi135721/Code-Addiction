@@ -11,17 +11,18 @@
 import java.util.Scanner;
 
 public class Abhi {
-	public static void main(String [] args){
-		Scanner sc = new Scanner(System.in);
-		int A = sc.nextInt();
-		//x contains no of zeroes at the end of factorial of a number.
-		int x = trailingZeroes(A);
-	}
-    public int trailingZeroes(int A) {
-        long no_of_zeroes = 0 , i ;
-        for(i = 1 ; Math.pow(5 , i)  <=  A ; i++){
-      	  no_of_zeroes = no_of_zeroes + (long) ( A / (Math.pow(5,i)));
-        }
-        return (int)no_of_zeroes;
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int A = sc.nextInt();
+    // x contains no of zeroes at the end of factorial of a number.
+    int x = trailingZeroes(A);
+  }
+
+  public int trailingZeroes(int A) {
+    long no_of_zeroes = 0, i;
+    for (i = 1; Math.pow(5, i) <= A; i++) {
+      no_of_zeroes = no_of_zeroes + (long) (A / (Math.pow(5, i)));
     }
+    return (int) no_of_zeroes;
+  }
 }
