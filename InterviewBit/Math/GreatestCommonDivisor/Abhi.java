@@ -22,7 +22,7 @@ public class Abhi{
         if(B == 0)
             return A;
         int gcd = 1;
-		start from 1, check any is common divisor to both; update the recent one
+		//start from 1, check any is common divisor to both; update the recent one
         for(int i = 1; i <= A && i <= B; ++i)
         {
             // Checks if i is factor of both integers
