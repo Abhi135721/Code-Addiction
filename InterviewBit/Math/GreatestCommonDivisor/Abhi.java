@@ -6,6 +6,7 @@
 		if both have no common divisor at all , return 1.
 */
 
+
 import java.util.Scanner;
 
 public class Abhi{
