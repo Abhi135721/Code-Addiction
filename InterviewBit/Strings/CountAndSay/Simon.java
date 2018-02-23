@@ -1,6 +1,6 @@
 /*
 Question:	The count-and-say sequence is the sequence of integers beginning as follows:
-			1, 11, 21, 1211, 111221, ...
+			1, 11, 21, 1211, 111221, ....
 			
 Approach:	Take "1" as the base case then count every character in the string to produce next string
 */
