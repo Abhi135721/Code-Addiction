@@ -44,8 +44,7 @@ formatter_args="--replace"
 # filter=ACMR shows only added, changed, modified, or renamed files.
 # Get only java files and prepend the root directory to make the paths absolute.
 changed_java_files=($(git diff --cached --name-only --diff-filter=ACMR \
-    | grep ".*java$" \
-    | sed -e "s:^:${root_dir}/:"))
+    | grep ".*java$"))
 # If we have changed java files, format them!
 if [ ${#changed_java_files[@]} -gt 0 ]; then
     # Do the formatting, stage the changes, and print out which files were changed.
