@@ -10,10 +10,9 @@ return 5 as length("World") = 5.
 */
 
 public class Solution {
-   public int lengthOfLastWord(final String A) {
-        String[] st=A.split(" ");
-        if(st.length==0)
-        return 0;
-        return st[st.length-1].length();
-    }
+  public int lengthOfLastWord(final String A) {
+    String[] st = A.split(" ");
+    if (st.length == 0) return 0;
+    return st[st.length - 1].length();
+  }
 }

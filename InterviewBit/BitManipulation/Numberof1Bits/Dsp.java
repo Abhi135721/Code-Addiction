@@ -9,12 +9,12 @@ so the function should return 3.
 */
 
 public class Solution {
-	public int numSetBits(long a) {
-	     int ans = 0;
-	    while (a > 0) {
-	        ans += a & 1;
-	        a >>= 1;
-	    }
-	    return ans;
-	}
+  public int numSetBits(long a) {
+    int ans = 0;
+    while (a > 0) {
+      ans += a & 1;
+      a >>= 1;
+    }
+    return ans;
+  }
 }
